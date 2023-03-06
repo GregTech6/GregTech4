@@ -1,0 +1,684 @@
+﻿4.08s
+Minor Bug and Recipe fixes.
+NINJA UPDATE: Added Recipes to convert OreDict Plutonium/Uranium into the IC2 Nuclear Items using the Compressor.
+NINJA UPDATE 2: Fixed Chrome Block alloy smelting recipe.
+NINJA UPDATE 3: Fixed the KNO3 recipe.
+
+4.08r
+The Output Facing of Basic Machines can now be Screwdrivered in order to let it allow Inputting Items from that Side.
+Added stackable Plastic Fuel Cans. But they only store 1 Cell instead of 6.
+The Basic Generators of GT no longer accept non-Fuel Items through Automation.
+Fixed Grinder, Implosion Compressor and Sawmill lagging, when there is only one Input Item.
+
+4.08q
+Added Aluminium Scoops which DO work in Adventure Mode. Seriously, I did it the normal vanilla Way as I explained it to him a while ago and it works perfectly, I don't know what problems Sengir has with just adding support for Adventure Mode. It's one thing if he doesn't care about Adventure Mode (as in the MC1.6-1.7 Adventure Mode), but plain out lying about having tried and failed to add that support to it is not a good Option.
+Fixed some Bugs.
+
+4.08p
+Fixed some Bugs.
+
+4.08o
+Decreased Recipe Scanning Lag of basic Machines.
+Added ZPMs which are 2000000000 EU Tier 7 Single Use Batteries found randomly in the world
+They need an High Energy Charger (also new) in order to be decharged. You might need something else to down transform the enormous amount of Energy properly.
+Changed Lapotronic Energy Orbs to the new Meta Item, note that you can craft your old Orbs into them without any Extra Cost or Energy Loss.
+Batteries and similar of GT now have their Texture depending on amount of Charge.
+
+4.08n
+After fixing another stupid Bug in the silly Advanced Recipe Manager of IC2 I made my own way of preserving the Charge from the Crafting to the Crafted Item (Tools being charged with the same amount of Energy the Crafting Ingredients had), by making my own Recipe Handler, and that Recipe Handler also isn't coded so stupidly complex that it would need any NEI Plugin or something for that as it just extends the vanilla Shaped and Shapeless Recipes.
+Added Lithium and Sodium Batteries. Note: The old Lithium Batteries are uncraftable, but the new ones are exactly the same as the old ones Storage and Tier wise.
+Red and Blue Alloy are no longer Dust Craftable, because it is more of an Infusion Recipe than an Alloying Recipe. Also fixed the missing Dust+Ingot and Dust+Dust Recipes.
+Also removed the old IC2-SU-Battery Recipes I had.
+The RE Battery Recipes, which are added by me were removed. But I added a GT Canner Recipe with 2 Redstone Dust and a Battery Hull to make them that way. (The IC2 Recipe with 4 Casings, a Tin Cable and 2 Redstone stays btw.)
+Battery Hulls now also craftable in the Assembler.
+Fixed some other Bugs.
+
+4.08m
+Requires IC2 Update for NEI not to go wild.
+Added a new kind of SU Batteries, which are much more realistic than those vanishing vaporizing instant decharging things of IC2.
+Optimized time of Alloy Smelter Recipes regarding Alloy Creation at startup.
+Fixed the newer Shapes/Molds not being meltable.
+Fixed some other Issues.
+
+4.08l
+Blacklisted Integrated Circuits from Unification.
+
+4.08k
+Fixed Bug in my recent "optimization" causing a ton of Recipes to not be processed and therefore decreasing loading time.
+Decreased Loading time again in another Way, so that it evens out my previous mistake XD
+
+4.08j
+Improved OreDict Handler, and no I did nothing on my MetaItems to improve the Startup time that drastically.
+Fixed some Bugs.
+
+4.08i
+Fixed some Bugs.
+Added some Potatos to Sticks.
+Nerfed the Alloy Smelter Mold Recipes, since they broke some progression of the Bronze Age.
+
+4.08h
+Added Molds for the most needed Items, such as Gears, Plates and Casings. (used in Alloy Smelter and it is a bit worse than the Extruder overall Energy wise, but the Voltage is lower)
+Plastic and Rubber now have Compounds, but they are not electrolyzable meaning their Recipes are a bit cheaper now (The Default Mass of an unknown Compound is much higher than a bit of Carbon and Hydrogen, what results in more expensive Smelting Recipes)
+
+4.08g
+Reduced amount of redundant Universal Macerator Recipes.
+Optimized TileEntities again.
+Optimized getting Crafting Recipes.
+Added new Crop Drops, so that most of them don't drop dusts anymore (but things you can make to the old dust instead). You now have to extract the plant's product to get a tiny metal dust pile.
+
+4.08f
+Made Chalcopyrite smeltable into Copper and similar small fixes.
+Improved getting TileEntities. Needs a bit of testing.
+
+4.08e
+Optimized the way TileEntities get adjacent TileEntities.
+Added one other random Item for testing purposes.
+Added some Recipes.
+Fixed some Bugs.
+
+4.08d
+Added Colors to the PFAA specific Ore Items.
+Added Uraninite Processing Step using the Chemical Reactor and Aluminium/Magnesium
+Added Chocolate Coins.
+Fixed a few Bugs.
+
+4.08c
+Added PFAA Support. Most of the Materials have the Default Grayish White Color, but that is going to be changed soon. I think the current PFAA Version still registers Ores under multiple Names (oreIlmenite + oreTitanium are one example), what is causing some Recipes to behave in a weird fashion, this is going to be fixed on PFAA Side soon.
+Added another Coin, just for the heck of it. It's not like it is wasting IDs or something.
+Fixed a bunch of Bugs.
+
+4.08b
+Made Cobalt the primary Byproduct of Copper and Nickel Ore, instead of the tertiary.
+Fixed Pipes always turning into the same direction when doing pathfinding.
+Fixed Adamant Problem with Metallurgy.
+Fixed many other Bugs.
+
+4.08a
+Buffed the Ingot Output of smelting crushed Ores by one Nugget. Now it makes sense to use the Hammer to crush Ores on the workbench before smelting.
+Since I am feeling generous right now, I buffed the heat Output of Lignite Coal (Underground Biomes) by +50% so that you get 1 and a half smelting Processes from it (so the same as Planks).
+While I was at it, I also added Lignite as a valid Fuel for the Coal Boiler. It gives 25% of the Heat of Coal/Charcoal, what makes it better than its actual Fuel value.
+Also added a Lignite Item Set, and Lignite as Byproduct of Coal Ore.
+
+4.07y
+Added Gears to my MetaItems, and an automated Recipe System for them. Due to the brokenness of the Gear System of BC, Forestry, RC, TE and co. I had to use another OreDict Prefix than "gear", so I was going with "gearGt" as subprefix, so that it fits to the Material System, and that I can Auto-Recycle my Gears as usual.
+Optimized some Code in regards of Pipe interaction.
+Killed very old and dead E-net interaction Code.
+Changed the Recipes of the Turbines to use Gears, and also the Recipe of the Diamond Saw Blade to use Cobaltbrass Gears surrounded by 4 small Piles of Diamond Dust.
+Most of the Bronze Age Machines are now maceratable/smeltable into Bronze/Steel.
+Hydration Spray can now clean Machines from their Colors.
+Bronze Age Machines no longer accept Iron Gears in Crafting. It must be Bronze.
+Gears are now used in Turbine Rotor Recipes instead of Blocks.
+GT Gears are interchangeable in BC Recipes by using re-registration.
+Added Golden Coins with Villager Faces to the Jungle Temple Loot, you CAN melt them back into Gold, but they are very rare, so you could put them into a Museum or use them as Adventure Currency or something.
+
+4.07x
+Made my Recipe System less laggy by adding Cross-Reference-Lists for used Items in Recipes. (aka everything with an Input of 1 Gold Ingot would be in one List per Recipe System).
+Added some new an much more awesome Coins, probably the most awesome Coins in History with 32x32 Icons! Main Material for their creation is Cupronickel as in some Real Life examples. They can be used like Industrial Credits, but they are not Industrial Credits.
+Fixed a bunch of Bugs as always.
+
+4.07w
+Fixed bugs as always.
+BEHOLD THE COMEBACK OF THE RETRIEVER!!! Works only on GT Pipes and has an inbuilt Regulator. Because of what it does, it is very expensive to craft it. It is far better than the Retriever of Redpower.
+
+4.07v
+Added Tool Heads for the most important Tools. (No new Tool System as of now)
+The Assemblers can put Toolheads and Sticks/Rods together to get the vanilly Tool.
+Some Toolheads are unobtainable as of now, like the Diamond ones for example.
+Extruders now only accept Ingots as primary Input. Plates and other things are no longer possible because of Lag.
+Fixed a ton of Bugs.
+
+4.07u
+Fixed a few bugs. (Main one being small dust piles not crafting back into normal dusts)
+Added Input and Output Bus for my Multiblocks. They are almost identical to the Input and Output Hatches, but they can store up to 9 Items and have no Fluid interaction. Currently only the output Bus is somewhat useful when having a Thermal Boiler.
+Hidden all Items which are having to do with Ore Processing from NEI and Creative. You can disable that hiding using the Config.
+But I won't do that for any of the unused Materials so don't suggest that.
+
+4.07t
+Optimized OreDict Processing Registration.
+Nerfed Paper Crafting to 2/3 per Cane instead of 3/3 (thanks to that one Bug report I got the Idea of nerfing it). The Printer of course has still the 1:1 Ratio for creating it.
+Added Printer Manual. It also explains how to make Paper properly using the Printer (these Recipes were already possible long time before)
+Added Functionality to the Printer, to switch Storage Blocks to the other Mods variants, since those Blocks are only decorative anyways. Unificating Blocks (what includes Ores, or at least most of them) has been disabled in some Version before this one, I don't know which one so they wont transmute back in your Hands.
+Fixed a ton of Bugs.
+
+4.07s
+Requires IC²-exp-374, because of the addition of the Recycler Whitelist (just a Config thing for Admins, who don't wanna keep up blacklisting tons of Stuff) to IC².
+
+Added Plastic Hammer (Upgraded variant of the Rubber Hammer)
+Plastic Pulp now obtainable by centrifuging Sticky Resin (as new byproduct)
+Plate Benders now have a new Stacksize Configuration Functionality (because of many colliding Recipes). You need to add a configured Integrated Circuit into the second Slot of the Plate Bender if it should produce the Items you want and not some Random Stuff (like Dense Plates instead of regular Plates if there are more than 9 Plates). The Integrated Circuit isn't getting consumed, and it is also optional (in cases where there are no ambiguous Recipes). It is also very cheap as it is just a Basic Circuit being crafted using a Soldering Tool (+ Material) and a Screwdriver. Integrated Circuits can be used like Basic Circuits in all Crafting Recipes (so that you can basically recycle them that way if you don't need them anymore)
+Note: Dense Plates are now no longer produced in a Compressor, you need the Plate Bender for it.
+
+4.07r
+Added Thermal Centrifuge and Ore Washing Recipes to my Crushed Ores. Currently there are many Steps for 100% Efficient (other Methods might be less efficient) Ore processing.
+1. Universal Macerator/Pulverizer -> Ore Washing -> Thermal Centrifuge -> Universal Macerator/Pulverizer again
+2. Industrial Grinder -> Thermal Centrifuge -> Universal Macerator/Pulverizer
+
+4.07q
+Materials are now Unificating away from the new MetaItem if possible, what results in old non-GT-Sorting Systems being compatible again, and other Mod Items not unificating into it unless they register too late at the OreDict.
+
+4.07p
+Fixed some Bugs.
+Added the new MetaItem to the Game. Many of the Materials are unused as of right now.
+Due to that, a ton of Recipes have been changed slightly.
+Rubber Processing got a new Step of smelting Rubber Pulp.
+
+4.07o
+Fixed several Bugs.
+Made some of the Extruder Recipes less Energy Costly (they were 10 times more "too expensive" than they should have been). They are now 3 times more expensive than the normal machine.
+The new MetaItem is still in testing. Debug2 in the Config can activate that Item if you want to risk a look at it.
+
+4.07n
+Changed Digital (and therefore also Quantum) Chests to make it possible to autoremove the stored Item Filter. To save the Filter even if the Digital Chest is empty, just hit it with a Rubber Hammer. Previously placed Digital Chests might remove their Filter because of that, so hurry up and use a Rubber Hammer on them.
+Changed Distillation Tower Recipes to be 4 times faster. (that also means 4 times more EU/t)
+Notes on Debug2 Config option
+
+4.07m
+Added a few new Extruder Shapes for Pipes and Storage Blocks.
+Added smaller Fluid Pipes (1 Plate per Pipe).
+Fixed a bunch of Bugs.
+
+4.07l
+Added Extruder. That Machine is very expensive in both Crafting and used Recipes. It can do almost every Metal Forming Recipe existing in GT, but at a much higher cost (2-4 times more than usual), consumes between 32 and 64 EU/t (Max Input 128 EU/p), needs a special Extruder Shape, which is 4 Steel Plates Crafted together using Hammer and File, then using the Wire Cutter on the blank Shape Plate for determining the Recipe (Coinage Molds now use the Hammer + Blank Shape Plate for creation), which has to be used in it. This Machine is for the people, who just wanna have one single Machine in their Workshop doing everything at a very high Speed.
+Added capability to add Recipes, which don't consume their Input to all GT Machine Recipes, what was originally only needed for the Extruder.
+Added Recipes now cancel out more of the combinations, so if you have a Recipe where you Input an Ingot and get an Ingot as Output aswell, they will cancel each other out. That was also needed for the Extruder, because of otherwise adding such Recipes.
+
+4.07k
+Fixed the Access Rules of semi-private and unbreakable Blocks. (Electric Trade-o-mat for example)
+
+4.07j
+Fixed the pipe not connecting to machines properly thing.
+Added the ability to break Logs and Leaves (OreDict based) to the Crop harvestor (Rubberwood works as well of course). Range depending on Overclocker Upgrades and only one Dimensional Forward, without any fancy backtracking of branches and stuff. Just one Line of Blocks being harvested. Warning: If you add more than one Overclocker to the Harvestor, you won't be able to make a profitable Charcoal Farm, since breaking Logs is calculated like this:
+Math.max(1, Log.resistance (which is usually 2.0)) * 100 * 4^Amount Of Overclockers, resulting in the following Values for regular Logs: 0->200, 1->800, 2->3200, 3->12800 and 4->51200.
+Also I didn't add any way to autoplant Saplings, so you have to find something else to do that for you.
+
+4.07i
+Door Stacksize set to 8, since unstackable Doors are just stupid (compared to Iron Blocks, Hoppers, Pistons and Anvils, which are stackable up to, what was it? Ahh yes, 64)
+Probably fixed the Chunk Unload thing, while fixing another Bug.
+Fixed Digital Chests and all the other GT Machines not being Left Clickable in Adventure Mode.
+
+4.07h
+Requires IC²-exp-355 for Portable Scanners not causing clientside glitches on crops.
+Added Scanner Block. It can currently only scan crops, but I plan more things for it.
+Fixed a ton of Bugs.
+Unlisted change: GregTech machines in the rain with uncovered sides will now also catch fire and explode. (Previously, only the top of machines needed to be covered.) To avoid this, either cover every side which would prevent access unless the right covers are used or it is accessed from the uncovered bottom) or build a wide roof above the machine.
+
+4.07g
+Changed Diamond Credits to be Platinum Credits (only Name and Color wise)
+Added Osmium Credits with Value 4096.
+Fixed a few Bugs.
+Added two Buttons to each of the two Filters.
+
+4.07f
+Requires at least IC² exp 353, for proper Localization Support on IC² Side (I fixed the Item Name translation, which caused Problems with other Mods).
+Added Coinage Molds. They receive their Security Code as soon as they are in your Inventory, meaning that if you produce more than one at once, the whole Stack gets assigned the same Security Code (much better than copying it after it has been crafted).
+Put the Mold in the bottom Slot of the Printer and insert Coins or other Molds into the first Slot for making copies with the exact same Security Code (and also the same Display Name if you renamed the Mold with an Anvil).
+Credits are only stackable if they have the same Security Code AND the same Name.
+The Credits use a new NBT keeping Crafting Recipe (still normally visible in NEI, since I did it properly), to make sure the 1->8 and the 8->1 Recipes work properly without loosing the Security Features.
+Trade-O-Mats and Digital/Quantum Chests now display Item Names properly translated when using Nuclear Control on them. A Nuclear Control Panel above a Trade-O-Mat would be a very nice indicator of what is being traded there.
+
+4.07e
+Improved Nuclear Control Support of my Machines. Note: I'm aware that the 2 last Buttons in the Panel GUI don't really belong inside the Player Inventory.
+Fixed a ton of things regarding the Trade-O-Mat.
+The Trade-O-Mat can be set to infinite Mode by either putting an IC²-Debug Item or a piece of Ultimate Cheat Armor into the Charge Slot. The Debug Scanner won't have that Effect as it is supposed to be just an Infinite Battery + Scanner in one.
+The Active Machine Detectors "Ready to Work" Modes see if the Trade-O-Mat has enough Stock (or space for Cash) inside and emit a Redstone Signal.
+
+4.07d
+Added Electric Trade-O-Mats. (I think I will add a Battery Slot to them, for places without proper Power connection).
+They are Pickaxe Resistant, but not Blast Resistant (the only way to break them is an explosion). They have 4 different GUIs, 2 Storage ones, one for the Settings and the public Trading GUI (the Trading one is ofcourse the only accessible one for other Players)
+Tweaked Player Detector a little by adding something to it. People who find that out will have fun.
+Fixed what I broke at the Capelist within 4.07c. I changed the way the List is generated, but forgot to lowercase all the names for proper comparision.
+
+4.07c
+Fixed some Bugs.
+Added Input Filter to the Basic Machines, which just have one single Input.
+Added small Tick Profiler into the GT-TileEnties to warn about possible Lag. You can configure when the warning should appear in the Log, default for that Warning is 100ms (to disable it set it to 0).
+Added a Function to the Scanners to display the average Milliseconds being consumed by a GT-TileEntity (Tick Lag), if you see that there are ~0.0 Milliseconds using the Scanners, it just means that it is less than a Millisecond (it only counts whole Milliseconds when summing up).
+Note: When the Advanced Pump does it's check for all surrounding Fluid Blocks, the Log Warning gets disabled for that particular Tick inside that TileEntity, because that Scan is a well known and also very rare Spike, but I was surprised how small that Spike actually was at the Nether Lava, just about 250ms on my Computer.
+Note²: The Lag Warning appearing inside the Log gets activated one Minute after the GT-TileEntity has been placed/loaded, to prevent eventual Initialization Ticks from showing inside the Log.
+
+4.07b
+Fixed all the GT Armors not working at all, luckily I have added a fail proof to it, otherwise people would have lost their GT Armors in the previous Version.
+Fixed Tooltips not appearing Properly on some Items (especially the ones which don't even have a Tooltip, because those generated a pointless empty line).
+
+4.07a
+Fixed a ton of Bugs.
+Changed a ton of internals regarding Localization, if an Item or a Block has a wrong Name, please tell me.
+Also due to the small localization change, Forge will complain about mismatched IDs, especially for Blocks, don't worry, the Blocks won't disappear.
+Requires IC² 345.
+
+4.06i
+Fixed Teleporter not using EntityLivingBase instead of EntityLiving (I missed one call of that one when updating to 1.6), making Players not update their Position.
+Fixed Teleporter calculating Player Weight wrongly causing the Costs to be 0 and therefor the Teleport to be impossible.
+Added the Information you get for Nuclear Control Displays to the Scanner aswell. (The Teleporter Buffer can now be seen without Nuclear Control).
+
+4.06h
+Fixed the Serverside Issue. I think.
+
+4.06g
+Added two new Features for the Printer, one being naming Items (primary Slot) using a named piece of Paper in the Copy Slot and a bit of black dye in the secondary one (the other is a secret to everybody).
+Added some Recipes to the Chemical Reactor and the Assembler for convenience.
+Fixed some Bugs.
+
+4.06f
+Added something to the Internals of my API, to be able to "generate" Items in 1.7, by just assigning them an ID and telling them what kind of Items to generate (like Dusts, Ingots, Plates, Gems etc.).
+Fixed a bunch of Bugs.
+
+4.06e
+Added Potassium Feldspar (byproduct of Red Granite) and Biotite (byproduct of Black Granite), and also added electrolyzer and Centrifuge Recipes for the Granites.
+Changed the Autocrafting Table to have an Input-Filter like Regulators have.
+Fixed some bugs.
+
+4.06d
+Release
+Machines and Conveyors output into Item Ducts by themselves. No Redstone signal or Servos needed.
+Machines and Conveyors SHOULD output into BC Pipes.
+Machines and Conveyors output into the Air (the no-collisionbox-condition) if there is space at said Side. I wonder how many peoples setups will be screwed, because they forgot to disable Auto-Output on my machines. The Items will be dropped centered and with absolutely no velocity, perfect to throw things into a Cauldron or a large Oven alike Structure.
+Disabled Auto-Output Button per default when placing a regular Machine, to prevent Confusion with the "drop Items into Air"-Function.
+Beta pre-release versions. Do not use any of them, unless you are specifically trying to test them. From this post, this one, this one, this one and this one: Okay I need some "Beta-Testers" for the attached Version. Subject of the Test is TE-ItemDuct interaction of my Machines and Covers. Things which need to be tested are:
+
+- Does it work at all?
+- Does TE not get screwed up for some weird impossible Reason (I use just the one Interface of the TE API regarding ItemDucts and no hacks or something, I don't even include Parts of the API!)
+- Do the AutoMachines and Conveyor Covers output properly into the ItemDucts?
+- Do small and large Buffers output only the Amount of Items they are supposed to output at once to the ItemDuct (to set the amount just Screwdriverclick the Output Facing), this could be very useful for roundrobin Mode (4 Items at once per Stack for example).
+- Does previous Automation not get screwed up (such as your already existing Setups of non-ItemDucted GT Machines)
+- If you connect an ItemDuct to a GT Item Pipe and let Items flow through (from both Sides), what happens?
+- If you are capable of Video creating on Youtube (only Youtube), please do a short one showing your Tests, in case anything went wrong.
+Things, which are currently supposed to NOT work with ItemDucts as of right now (I probably fix that):
+
+- Regulators and Advanced Buffers, because they insert into a certain Slot and use different Code for that
+Pre 7
+Actually make GT to TE work now:
+Item ducts on unpowered extract mode touching a Gregtech auto-output side will accept a machine's output. Gregtech pipes will put items into item ducts properly. The item duct must however be in extract mode (but doesn't have to be powered). Item ducts to Gregtech pipes worked before anyway.
+
+Pre 6
+And trying again. Now with less Numbers.
+Pre 5
+And trying again on debugging. Please run with your ItemDucts and attach the GT_Log File. Note that all this is about Item OUTPUT directly out of GT MACHINES, not input and also no Item pulling from the Duct itself. The Log should contain a large bunch of Numbers, if it doesn't you did it wrong.
+Pre 4
+If this didnt fix it, then please attach the GregTech.log File of that run to your next Post.
+(included some debug readouts)
+Pre 3
+This just fixed the Regulators and Adv Buffers not working, or at least it should have fixed that.
+Pre 2
+Fix mistake to actually make the TE stuff work
+Pre 1
+First release of testing - nothing actually worked :)
+
+4.06c
+Added "very annoying" Sounds to some of my Machines.
+Added Muffler Upgrade to disable those annoying Sounds.
+Fixed Lamp Bug and some other things.
+
+4.06b
+Made a major Code refractoring. You would be surprised what you can mark as Warnings/Errors in eclipse under "Window -> Preferences -> Java -> Compiler -> Errors/Warnings".
+Bugfixes en mass.
+AESU Output now Redstone Controllable using the Controller Cover and Signals with different Strengths.
+Digital and Quantum Tanks can now have a Liquid Filter, if you attach a Controller Cover and disable the Activity.
+
+4.06a
+Requires IC²-exp 336.
+Changed the Default Bronze Ratio to 3+1=4.
+Crafting Dusts together yields 25% less alloyed Dusts than using Alloy Smelter or similar Devices, to encourage the usage of those Machines. This currently doesn't affect Stainless Steel and Kanthal, because they need more than 2 different Dusts in their Creation.
+Unification doesn't affect Blocks anymore, only Items so that your Decoration Blocks shouldn't be unificated.
+
+4.05v
+Fixed forgetting to set Materials.Enderium to Blast Furnace Only. It is also 3000 to not easily break the TE-Tech-Tree.
+Removed that warning above. Turned out it didn't take me "1-2 Days" to remove that one, since I found another serious inbalance, see Line above. XD
+
+4.05u
+Added Granite Dusts.
+Added Blast Furnace Tag for Fluxed Electrum (Materials.ElectrumFlux), and set the required GT Heat Capacity to 3000 just to not screw up any Tech Tree, but to still be able to do it with the EU System somehow.
+Maybe fixed getting TE Items by using GameRegistry.findItemStack, but I still wait for the Support Request containing the String->ItemStack mappings of TE (if the GameRegistry is even used by them).
+
+4.05t
+Updated most of the TE Support. I hate updating Forge (even with the installer) so I am not able to test it.
+Fixed Soldering Metals not being registered in my Tool List causing the Soldering Tool to not find any in your Inventory (one of my improvements failed slightly).
+Fixed most of the Abyssal/Quarried Blocks not being maceratable in later RC Versions. With "most" I mean all but the regular vanilly Stone variant.
+
+4.05s
+Requires IC2-exp-332
+Fixed some Bugs.
+
+4.05r
+Fixed a bunch of tiny Bugs.
+NINJA UPDATE - Fix crash without Nuclear Control
+
+4.05q
+Added electric Screwdriver and Tungstensteel Screwdriver.
+Changed some things in Gregtech Item API, please report any accidentally wrong Items, because I changed from an Index System to an Enum based one.
+
+4.05p
+Fixed the Bug with Thermal Boiler item output
+Added 2 new Icons to the Redstone Display.
+NINJA UPDATE - Fixed Automatic machines not working
+
+4.05o
+Fixed some Recipe Bugs.
+Added a surprise Block. (The Digital Tank)
+
+4.05n
+Requires IC² 328.
+Added the "Drop" Icon to the Redstone Display.
+Fixed some visual Issues with the Filter.
+Nerfed the Fuel Values for Ethanol, Biomass, Oil, Fuel and Nitro-Fuel and adjusted their Distillation Tower Recipes (also added some byproducts for Biomass).
+Fixed some other Issues.
+
+4.05m
+Added Filters and Type Filters.
+Fixed a ton of Bugs.
+Added Alloysmelter and Blastfurnace Recipes, which accept 4 small Dusts like they do with one large Dust (same for 9 tiny Dust) to smelt them. Just a very useful convenience Recipe.
+
+4.05l
+Fixed a bunch of Bugs and Recipes.
+Requires IC² 316 or it will bug the hell outta you.
+
+4.05k
+Nerfed the throughput of all Item Pipes by 50% (Small Brass has now only 1 Item/sec)
+Added Platinum Item Pipe with 100% more throughput than the Electrum variants to keep the 8 Items/sec Bandwidth.
+
+4.05j
+Due to popular demand (and an idea Greg got through watching Bakerman), Item Pipes now accept Items in the amount they can transfer (you can insert 8 Items into a single large Electrum Pipe and they will all get transferred)
+Fixed the ClassCast I used to get the Block from an ItemStack.
+
+4.05i
+Added seperate Configs for Rock Crusher and Macerator.
+Fixed some Bugs.
+Blacklisted all Ore Blocks from unification. Who's going to let more than one kind of the same Copper Ore generate anyways.
+
+4.05h
+Fixed dupe glitch involving setting the output hatch to Items or Items and liquids with the Gas Turbine giving double Empty Cells.
+Fixed some other things.
+
+4.05g
+Fixed several Bugs.
+
+4.05f
+Fixed some Unification derp-ups, due to reversed order of Pre-Unification.
+Fixed Netherrack/Endstone/Granite Recipes of the IGrinder.
+
+4.05e
+Fixed redundant OreDict Unification.
+Tried to fix the Quartz Issue. I think I've fixed it.
+
+4.05d
+Fixed the stupid "|" character Bug in my Config. Forgot replaceAll() has special Functionality on certain Characters, such as "*" or "|", so I needed to double-backslash the
+Cells should now work with the Liquid Transposer as I moved that to the @Init Phase.
+
+4.05c
+Fixed a bunch of tiny Bugs.
+
+4.05b
+Fixed the exploit of Iron Bars back to more Iron than needed to craft in the Alloy Smelter
+Fixed a Bug regarding Crafting Unification, when Mods use OreDict Items as Output for Recipes without copying them before (what now gives you an Error Log Message).
+
+4.05a
+Fixed Unification of Crafting Recipes being problematic at Invalid ItemStacks.
+Fixed a ton of Bugs.
+
+4.04 Version Number Not Found
+OreDictUnification now with improved targeting Config.
+GregTechs @Init and @PostInit Phase now always run last (unless someone else does Rawcodes hack after I did). The "after:*" Sorting tag of Forge doesn't work properly at all, so I had to hack that.
+Fixed that Tin Cell Math Bug, and removed that old Tin Cell per 4 Tin Config since it caused the Math to happen. 1 Tin Cell = 2 Plates, that is still better than 3 Iron for 1 Bucket.
+Fixed a Conveyor Cover Bug pointed out by mistaqur.
+Game doesn't crash if a Chunk doesn't have ANY Biome (that Worldgen Error on the [Edit: 2nd] previous Page), but I would go and tell the one who did that, that it has to have a Biome, even if it is an own selfdefined one.
+OreDictUnification now affects the output of crafting recipes.
+
+4.04z
+Fixed many Rendering Issues with my Blocks.
+Added a new Button Panel Design with actual Numbers on it.
+Changed Button Panels to be white, so that they are easier to color.
+Added Iron Frame, where you can put Covers on just for Decoration.
+
+4.04y
+Tweaked the Advanced Pumps Scanning Algorithm and made it iterating instead of recursing.
+Advanced Pump now pumps one Block per second instead of two.
+Advanced Pumps can be upgraded by stacking additional Advanced Pumps on top of them.
+Fixed some Bugs.
+
+4.04x
+Fixed Scrapboxinator.
+Improved some IC² Machine Recipe Stuff.
+
+4.04w
+Fixed OreDict.log writing everything happening before GT is loaded into System.out.
+Fixed OreDict.log seeing GT-Re-Registrations as been done by the other Mods.
+Fixed NetherOres compatibility entirely. Including certain values in the Industrial Grinder (you now need twice as much Water/Mercury etc. for a Nether Ore) and twice as much Calcite in the Industrial Blast Furnace.
+Fixed some Rendering Issues on Pipes.
+
+4.04v
+Tweaked Autocrafting Table a bit.
+If you use a portable Scanner on a Machine, it tells you if you feed enough Energy to it, and if the Machine needs Battery Upgrades.
+Fixed a bunch of Bugs.
+
+4.04u
+Optimized the Recyling Recipe Scanner, to not accept Recipes with either more than 2 different Items or with damagable Items such as Tools in them. That should fix the scanning of the over 20000 Recipes (a gazillion Recipes for reloading and repairing the Guns, but I told him already about how to fix that) of the Flint Lock Mod.
+Fixed other Bugs.
+
+4.04t
+Fixed Data Control Circuits being in the OreDict under the wrong name
+
+4.04s
+Requires Update to IC²-exp-292 or later.
+Fixed a bunch of Bugs.
+Added Mode to the Shutter Covers to make Pipes One-Way.
+
+4.04r
+Fixed Player Detector, and moved it to the MetaTileEntities, meaning you have to wrench older Player Detectors.
+Fixed Buffers, Sorters, Regulators, Scrapboxinators and Rockbreakers being able to receive Items from their Output Side.
+Pipes connected to Shutter Covers now always look like they are connected. Because the Pipe otherwise connects and disconnects visually all the time.
+
+4.04q
+Fixed GT Ore Textures on the Granites.
+Fixed ALL Worldgen generating at XZ-Coords / 16 in ALL Dimensions.
+Probably fixed UE compatibility, but it was impossible to test it, because all of Calclavias UE Mods don't have any Wires, and Mekanism fails to startup.
+
+4.04p
+Changed the Textures for some of the Redstone Displays, so that Painting them is as easy as possible.
+Dust Piler Mode works with Tiny Dusts as well. (Forgot to mention that in an older changelog).
+Added some lines to the Manual Books.
+Fixed some Bugs.
+
+4.04o
+Fixed Fusion Injector not accepting Fluids. (that was the Bug)
+Made Plutonium Red.
+Autoadding Recycling Smelting Recipes for OreDict Items, such as Metal Sticks.
+Added Shutter Cover, whichs main purpose is blocking Pipe Sides. Works only when a Controller Cover is installed on the same Pipe (or Machine) aswell.
+
+4.04n
+Fixed a bunch of Problems.
+Didnt fix the Fusion Reactor now, I just wanted to release the Stuff I did before I upgraded my Hardware.
+Ninja Update - Fixed no machine recipe showing in NEI
+
+4.04m
+Fixed Sawmill Slots.
+Ignoring TContruct Stuff in the OreDictionary
+Added a bunch of new Materials and Prefixes to the Lists, thanks to JZTech.
+Fixed Pyrite Ore Smelting.
+
+4.04l
+Fixed Centrifuge giving twice as much Materials in some occassions.
+Added Tiny Pile Versions of every GT Dust (the 1/9 ones).
+Finally added Iridium Dust.
+Ninja Update - Fixed an exploit with Crafting Tables treating Empty Cells as their own container items.
+
+4.04k
+Probably the last version to be compatible with non-experimental IC²
+Added Config for the change of Scrap from Scrapboxing. The larger the Config the larger the weight of the Scrapchance.
+Added Config to determine the despawn time of Items, default 6000 (5 Minutes) and that Config works only on Items which have the standard unmodified despawn time of 6000.
+
+4.04j
+Fixed a bunch of Bugs.
+Added special Container Item Handling for the two Workbenches and the Autocrafting Table, so that they now empty the Cells instead of destroying them and similar. That also somewhat hackfixed the Wirecutter and the Forgehammer Problem for all 3.
+Fixed overriding Macerator Outputs for Ores with the GT or IC² variant, what would have made Addon added crushed Ores impossible. Now it overrides an Ore Recipe only if the Output would be a regular Dust.
+OreDictUnification is a bit more "aggressive" now, as it unificates your Inventory (Can be disabled in Config), and it also Unificates everything what is entering a GT Block.
+
+4.04i
+Changed a bunch of Internals, to make Ore Handling, such as grinding much more universal. Some byproducts have changed slightly, but the most important ones stay the same.
+Added a ton of random Items, such as Bolts, Screws, Rounds and Lenses.
+Mining Lasers now need a Red Lense instead of a Ruby (Red as in, you need to put any Red Gem Plate into the Lathe to get the Lense of that Color).
+Added Colors (the 16 Minecraft Colors) as attribute to the Material Dictionary, so that almost every Material has a predefined Color, what is mainly used to determine things like Lense Color.
+Added Red and Yellow Garnet Blocks and Plates.
+Added dirty Dusts, which can be centrifuged into one of the Byproducts of that Material (if it has a Byproduct, if not, then it just cleans the Dust). Dirty Dust processing will be changed, but centrifuging it will always be possible, just the Outputs might change slightly.
+
+4.04h
+Fixed some Recipe Problems.
+
+4.04g
+Got the Load time down to 31 seconds on my Mod Setup. It was 60 Seconds before.
+Fixed a not-so-critical Bug mentioned by retep.
+
+4.04f
+Decreased my own load time from 60 seconds to 53 seconds by buffering the addition of Crafting Recipes, so that the Recipe Scanner doesn't have to scan Recipes which are definetly not needed to be scanned.
+Fixed 1 Hydrogen Cell + 1 Air Cell = 5 Water Cell. Forgot to make it 4 Hydrogen Cells after I copypasted... I give 3 Tin Cells to everyone who has found that Bug.
+
+4.04e
+Fixed a ton of Bugs. Don't ask which ones, I don't remember Bugs myself as I am done with them.
+
+4.04d
+Changed a bunch of OreDict Handling. That includes the handling of wrongly registered Items, and mentioning those in the Log. In case such Item happens to be in your Log, please tell that to the Owner of said Item and not me. It even tells what OreDict Name one could choose instead, to make it more valid, and if that isnt a Service then I don't know. Unknown Thingies and Materials are ofcourse still being detected, and I ofcourse still want you to report things like that to me. I just dont want you to report the wrongly registered Items.
+Fixed Cell Metadata Issue.
+
+4.04c
+Fixed a ton of Bugs. Nothing really important.
+
+4.04b
+Added Black Granite. You can find Tungstate, Sheldonite and Iridium Ore in it in reasonable quantities. The Granite is so hard, that you need Diamond Level to break it, and it is TNT Proof, so forget about that. Diamond Jackhammers can break it quite fast, even when harder stone is enabled. The Granite has 3 times more hardness than "whatever" hardness Stone has, so it directly depends on the Harderstone Config (or similar Configs of other Mods).
+Added Red Granite. You can find Tetrahedrite, Sphalerite and Cinnabar Ore in it. Like Black Granite, I ofcourse added the decorational variants of this Block as well and made them spawnproof (Cobble and mossy Cobble variants are NOT spawnproof).
+Added BoP RedRock finally to the Macerator, and fixed some Underground Biomes Stuff as well.
+Fixed the crushed Ores mentioned above.
+Fixed NEI Spam in conjunction with mistaqurs NEI Plugins.
+-The "crushed Ores mentioned above" refers to a bug wherein Macerated Ore blocks were returning Dusts of themselves, rather than Crushed Ores of themselves.
+
+4.04a
+Added the Material Dictionary, which is a very large List of Materials, which I know of with all their Stats, Values and Chemical compounds behind them, as well as a Periodic "List" of Elements, which includes pretty much all Elements up to Nr. 118 (including Antimatter counterparts), it also includes Neutronium and Magic (Well, a very undefinable Element, but it is there).
+Optimized many of the OreDictionary related Functions at startup.
+Changed almost every Electrolyzer and Centrifuge Recipe.
+Added Alloysmelter Recipes for Dust+Ingot, Ingot+Dust and Dust+Dust.
+Improved Recipe Handling by letting it use OreDictUnification. That way all the Recipes should now have just one instance even if there are 3 or 4 kinds of the same Dust out there. I also adjusted the GT internal NEI Plugin to make use of it.
+Added Kanthal, Nichrome and Cupronickel Ingots/Dusts, which have to go through the Wiremill to create the Coils instead of the Rolling Machine.
+Fixed a bunch of other Bugs.
+Ninja Update - Added code to detect items/blocks set out of their range (out of bounds exception), and say which mods the items/blocks come from
+
+4.03d
+Fixed some things.
+Improved Material Code.
+
+4.03c
+Fixed Blast Furnace Requirement for certain Materials. I had a small Typo causing all possible Materials to be Furnace compatible.
+Added a Config inside the GregTech.lang to enable it. Set it to true if you have other GT Language Files. That is only because if I change the Default Name of something, it will not recognize the Default to be changed.
+Added Steel and TungstenSteel Tools.
+
+4.03b
+Fixed that small Loop in the Stainless Steel Chain.
+Improved the Handling of other Mods Tools, if Plates are available. The System is now much more generic and can scan for Tools, which use any kind of Sticks (I doubt any other Mod aside from Infitools (does that still exist?) uses other Sticks than Wooden ones, but still).
+
+4.03a
+Please get rid of all GT Refined Iron Plates and Refined Iron Rods, they will otherwise vanish.
+Added Stainless Steel, you need to mix 6 Iron, 1 Nickel, 1 Chrome and 1 Manganese Dust to get 9 Stainless Steel Dusts, which can then be smolten at 2000 in the Industrial Blast Furnace.
+Fixed Scrapbox compatibility finally.
+Fixed a ton of Recipes again.
+All recipes that required refined iron no longer do so.
+
+4.02i
+Added Tungstensteel Fluid Pipes, which can carry 9600 Liters per tick.
+Added 3 new Books.
+Fixed a few Experimental related Crafting Recipes (Tin Wires)
+
+4.02h
+Fixed Pipe Rendering.
+Added the Redstone Lamp I always wanted to add, but wasn't able to, due to whatever the Minecraft Lighting System has Problems with.
+Said Lamp can be colored like every other GT Machine.
+
+4.02g
+Fixed some Pipe related Stuff
+Added Wool Covers (rightclick with Carpets)
+
+4.02f
+Added Item Pipes made of Brass and Electrum. Stacks per second is the amount of Stacks one Pipe can move at max per Second.
+Added large variants of every Pipe, which can carry twice as much Stuff as their smaller Version. The large Steel pipe can carry 480L per Tick (9600 per Second).
+The Item Pipes work with a Pneumatic routing principle, meaning even if there is no Item going through a Pipe, alone the Pathfinding will add to the used capacity, so that all Pipes, which are having a lower distance to the finally chosen Target will add +1 transferred Stack. The Pipes work with all the normal Inventory insertion Methods unlike the stupid Buildcraft or Redpower Pipes, which need special Machines or API implementations for inserting Items. That means a simple Hopper or a Conveyor Cover are enough to interface with the System.
+
+4.02e
+Changed handling of grinding Ores. Now with 100% more AI.
+Fixed several Bugs.
+Changed the Fluid Pipe to be more realistic. Now it is very similar to a BC Liquid Pipe, but it still has more capacity.
+
+4.02d
+Added rendering for Covers and CFoam to Pipes.
+
+4.02c
+Added Steel and Bronze Pipes. Both are transferring Fluids, and evenly distribute on crossings, and with evenly I mean 100% evenly, not just random evenly. You CAN put Covers on them, but I didn't write anything Facade alike to render them for now, so they look a bit wonky. The Pipes can be painted as well to disconnect them from each other like IC² Wires, but you can ofcourse use Covers to do the same at the cost of a plate. In case you painted the GregTech Machine you want to connect to too, you have to either use an uncolored Pipe or one of the same Color. Note, that Uncolored != White, I have actually 17 Colors, one of them meaning uncolored. I copied most of it from IC² Cable Rendering, so it has some Bugs, which are not even noticable on IC² Cables (due to their Textures), but sadly they are noticable on my Pipes. I won't do anything about the Fullblock Hitbox. I like if the Hitbox cant glitch you out due to vanilla Bugs, see Redpower Lamps for the most extreme example.
+
+4.02b
+Fixed that stupid Bug with the Render Stuff
+Made Generators being crafted using Steel casings, halved the amount of small Buffers gotten from uncrafting the large one.
+Fixed rendering of the old depricated Machines in the Inventory.
+
+4.02a
+Added ability to Color Machines. That looks good on the regular whitish Machines, but you shouldn't try it on the Bronze ones. The GUI is colorized too unless you disable it via Config
+Fixed a ton of Bugs regarding recent experimental IC²
+Changed a crapton of Recipes to require regular Iron instead of refined Iron. You should no longer need refined Iron unless you want to make GT Iron Hammers or GT Iron Wrenches.
+
+4.01g
+Fixed increasing Electric Energy upon getting drained in my Blocks.
+Fixed Liquid Containers having strange Stacksizes, which either lead to 0-Stacks or cause other Problems
+
+4.01f
+Fixed the Enet Problems my Machines had, because Player decided to inject Energy from "ForgeDirection.UNKNOWN".
+
+4.01e
+Fixed several Hammer Recipes, and disabled IC2 Forgehammer per default.
+Many IC² Machines now require Steel. That also includes some GT Machines.
+
+4.01d
+Fixed Steel Boiler consuming only 50% of what it was supposed to consume.
+Added High Pressure Steam Furnace.
+Fixed a ton of Bugs regarding Experimental IC².
+
+4.01c
+Added Bronze Blast Furnace. Needs the one controller Block and 32 Bronze plated Bricks. not really automatable as you have only one single facing to do that, it can also only produce Steel. For Aluminium it is a bit too dirty as it needs Coal. It also takes a lot of time to produce Steel, so place more than just one of them.
+Added Steel Boiler variant of the small Bronze Boiler. It is just more Efficient and 2.5 times as fast at producing Steam (15 Steam/t).
+
+4.01b
+Added Bronze variants for Extractor and Compressor.
+Sticky Resin now no longer smeltable into Rubber, meaning you have to make the Steam based Extractor first.
+Added a Steam Vent to the Steam based Bronze Machines. You need to keep that Vent (what looks like the Output Facing but isn't for Bronze Machines!) free from any obstructing Blocks aka Blocks with a Collisionbox, as the used Steam has to exit that Vent into the Air (warning, you will get damaged if you stand right in front of it).
+Added compatibility to both the experimental and the regular Version of IC².
+
+4.01a
+Disabled the broken BC and UE compatibility until I fixed that, so that crashes won't occur.
+Added a bunch of Steam Powered Machines, and of course an early game Steam Boiler. Btw. If you put 10 Copper Plates into the Steam Forge Hammer, then you will get a dense Copper Plate. I say that, because it has a pure OreDict based Recipe System, and because the Steam Hammer Recipes should be not that known (as if someone ever reads this Changelog).
+Fixed the Sounds-Doubling Bug in my OWN Sound System. I don't know whoever got the Idea, that I would ever use the IC² Sound System for myself (People suggesting to turn off GT Sounds using the IC² Config, WTF!?!). I just made an improved Version of the vanilla System for that.
+Made most of the Sounds which Tools do Serverside, what also fixes the "Bug", that a Tool always makes a Sound, even if not getting used on rightclick, and what makes those Sounds hearable in SMP.
+Fixed references to internals of IC² inside my API, so that the dev-deobf is not needed when using my API.
+Now using the vanilla/forge Recipe Handlers instead of the IC² Recipe Handlers whenever possible, because of that small NEI Problem.
+
+4.00e
+Added Prospecting ability to the Hard Hammers.
+Added Nickel Ore. The only vanilla Biome, which spawns it is Extreme Hills (I will likely add it as well to the planned new Clay Block Biome), but its also in other Mods Biomes as always.
+The Crowbar has now the ability of turning rails etc. of VANILLA Minecraft. When Railcraft is installed, then it will use the Railcraft Functionality as Railcraft overloads Rails.
+The Rubber Hammer can now turn Powered Rails and those Priming Tracks, on and off.
+
+4.00d
+Added cheaper Bronze Version of the Advanced Crafting Table, which has no charging Support and a smaller internal Tank.
+Added Plate Cutting Machine, which cuts Storage Blocks into Plates.
+Added Plates for various Gem Stones, Redstone and Coal.
+Added Covers for Wooden Planks.
+Fixed Electrolyzer being able to output free Buckets for pumped Water.
+
+4.00c
+Fixed some Bugs.
+Made the five mentioned vanilla Blocks also minable with vanilla Tools.
+
+4.00b
+Added Flint Tools.
+Added Ways to harvest the 5 Blocks which are unbreakable in Adventure Mode (using Saw, Drill or JackHammer).
+Added IC² Sounds to most Tools, even the ones you never heard!
+- The "5 blocks which are unbreakable in Adventure Mode" are the Bed, Sponge, TNT, Hay Bales and Silverfish Rock
+
+4.00a
+Many Code changes. Some Features are not working, for example the extradamage to certain kinds of Mobs, when using my Tools (Wrench on Golem for example), as the Hook for variable Damage got removed.
+Translocators are now overclockable, meaning that a fully overclocked one instant pulls out Items.
+Added the Anvils Hammer Sound to the Hammer when crafting something with it.
+Added the default Value into the Name of the Configs, in case I change the Default. You can basically scrap your old Dynamic Config File, because everything in there has been renamed due to that.
+Added the generic Worldgen Parameters to the Config. (Probability, Size, Amount per Chunk, MinY, MaxY)
